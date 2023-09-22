@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/about-us.css">
+  <link rel="stylesheet" href="./styles/decor-order.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper d-flex justify-content-between">
+      <div class="header__logo color-white fs-6">
+        LOREMIPSUM.<span class="color-primary">NET</span> 
+      </div>
+      <nav class="header__nav d-flex justify-content-center">
+        <input class="header__checkbox cursor-pointer" type="checkbox" name="" id="" />
+        <div class="header__hamburger-lines ">
+          <span class="header__line header__line1"></span>
+          <span class="header__line header__line2"></span>
+          <span class="header__line header__line3"></span>
+        </div>  
+        <ul class="header__menu">
+          <li class="header__menu-item cursor-pointer fs-1 fw-semibold"><a href="#" class="color-white">БИЗНЕС</a></li>
+          <li class="header__menu-item cursor-pointer fs-1 fw-semibold"><a href="#about-us" class="color-white">О НАС</a></li>
+          <li class="header__menu-item cursor-pointer fs-1 fw-semibold"><a href="#" class="color-white">ЦЕНЫ</a></li>
+          <li class="header__menu-item cursor-pointer fs-1 fw-semibold"><a href="#decor-order" class="color-white">ОФОРМИТЬ ЗАКАЗ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="about-us" class="about-us">
+    <div class="about-us__wrapper"> 
+      <h1 class="about-us__title fs-8 fw-bold fw-bold">
+        <span class="color-primary-light">LOREM IPSUM</span> 
+        DOLOR SIT </br> AMET CONSECTETUR <span class="color-primary-light">ADIPISCING</span>
+      </h1>
+      <h3 class="about-us__subtitle fs-5 fw-bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
+      <ul class="about-us__list fs-5 fw-regular">
+        <li class="about-us__list-item">Totam rem aperiam eaque ipsa</li>
+        <li class="about-us__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+        <li class="about-us__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+      <div class="about-us__action fw-regular">
+        <button class="about-us__btn cursor-pointer fs-1 fw-regular btn-1">ЗАКАЗАТЬ</button>
+        <button class="about-us__btn cursor-pointer fs-1 fw-regular btn-2 color-black">ПОДРОБНЕЕ</button>
+      </div>
+    </div>
+  </section>
+  <section id="decor-order" class="decor-order">
+    <div class="decor-order__wrapper">
+      <h2 class="decor-order__title fs-7 fw-bold color-white">ОФОРМЛЕНИЕ <span class="color-primary-light">ЗАКАЗА</span></h2>
+      <h3 class="decor-order__subtitle fs-4 fw-regular color-whitegrey">Перед заполнением формы ознакомьтесь с нашей схемой работы!</h3>
+      <div class="decor-order__show">
+        <div class="decor-order__show-content color-white">
+          <div class="decor-order__img-circle">
+            <img src="./assets/magnifying-glass.svg" alt="" class="decor-order__img">
+          </div>
+          <p class="decor-order__description fs-3 fw-regular">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="decor-order__lines-wrapper">
+          <img src="./assets/Lines-dot.png" alt="" class="decor-order__lines">
+        </div>
+        <div class="decor-order__show-content color-white">
+          <div class="decor-order__img-circle">
+            <img src="./assets/percents.svg" alt="" class="decor-order__img">
+          </div>
+          <p class="decor-order__description fs-3 fw-regular">Сonsecteturadipiscing elit</p>
+        </div>
+        <div class="decor-order__lines-wrapper">
+          <img src="./assets/Lines-dot.png" alt="" class="decor-order__lines">
+        </div>
+        <div class="decor-order__show-content color-white">
+          <div class="decor-order__img-circle">
+            <img src="./assets/file.svg" alt="" class="decor-order__img">
+          </div>
+          <p class="decor-order__description fs-3 fw-regular">Sed do eiusmod tempor</p>
+        </div>
+        <div class="decor-order__lines-wrapper">
+          <img src="./assets/Lines-dot.png" alt="" class="decor-order__lines">
+        </div>
+        <div class="decor-order__show-content color-white">
+          <div class="decor-order__img-circle">
+            <img src="./assets/sms.svg" alt="" class="decor-order__img">
+          </div>
+          <p class="decor-order__description fs-3 fw-regular">Esse cillum dolore eu fugiat</p>
+        </div>
+        <div class="decor-order__lines-wrapper">
+          <img src="./assets/Lines-dot.png" alt="" class="decor-order__lines">
+        </div>
+        <div class="decor-order__show-content color-white">
+          <div class="decor-order__img-circle">
+            <img src="./assets/dollar.svg" alt="" class="decor-order__img">
+          </div>
+          <p class="decor-order__description fs-3 fw-regular">Excepteur sint occaecat </br>  cupidatat non proident</p>
+        </div>
+      </div>
+      <form class="decor-order__form">
+        <div class="decor-order__data">
+          <div class="decor-order__dropdown">
+            <input class="closed" type="text" name="system-type" id="system-type">
+            <input class="decor-order__checkbox" type="checkbox" id="dropdown-toggle">
+            <label class="decor-order__label fs-4 fw-regular" for="dropdown-toggle" id="dropdown-label">
+              Выберите элемент
+              <svg width="9" class="decor-order__img-wrapper" height="7"  viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="decor-order__img" d="M8.93373 5.34847C8.93373 5.4199 8.89801 5.50025 8.84444 5.55382L8.39801 6.00025C8.34444 6.05382 8.26408 6.08954 8.19265 6.08954C8.12123 6.08954 8.04087 6.05382 7.9873 6.00025L4.47837 2.49132L0.969439 6.00025C0.915867 6.05382 0.83551 6.08954 0.764082 6.08954C0.683725 6.08954 0.612296 6.05382 0.558725 6.00025L0.112296 5.55382C0.0587246 5.50025 0.0230103 5.4199 0.0230103 5.34847C0.0230103 5.27704 0.0587246 5.19668 0.112296 5.14311L4.27301 0.982396C4.32658 0.928824 4.40694 0.89311 4.47837 0.89311C4.5498 0.89311 4.63015 0.928824 4.68372 0.982396L8.84444 5.14311C8.89801 5.19668 8.93373 5.27704 8.93373 5.34847Z" fill="white"/>
+              </svg>
+            </label>
+            <ul id="dropdown-list" class="decor-order__dropdown-list closed">
+                <li class="decor-order__dropdown-list-item fs-4 fw-regular color-white" onclick="updateInput(this)">Элемент 1</li>
+                <li class="decor-order__dropdown-list-item fs-4 fw-regular color-white" onclick="updateInput(this)">Элемент 2</li>
+                <li class="decor-order__dropdown-list-item fs-4 fw-regular color-white" onclick="updateInput(this)">Элемент 3</li>
+            </ul>
+          </div>
+          <input class="decor-order__input fs-4 fw-regular" type="text" name="name" placeholder="Имя">
+          <input class="decor-order__input fs-4 fw-regular" type="email" name="email" placeholder="Email">
+        </div>
+        <div class="decor-order__interactive">
+          <div class="decor-order__slider-container">
+            <div class="decor-order__slider-description">
+              <p class="decor-order__slider-title fs-4 fw-regular color-white">
+                Sed ut perspiciatis, unde omnis iste natus
+              </p>
+              <output id="slider-value" class="decor-order__slider-value fs-4 fw-regular color-white">75%</output>
+            </div>
+            <input class="decor-order__slider" type="range" id="slider" min="0" max="100" value="75">
+          </div>
+          <div class="decor-order__file">
+            <input type="file" id="file-upload" class="decor-order__file-upload"  name="file" >        
+            <label id="file-label" for="file-upload" class="decor-order__file-label cursor-pointer">
+              <div class="decor-order__file-label-content fs-2 fw-regular">
+                <img src="./assets/file-upload.svg" alt="">
+                ПРИКРЕПИТЬ ФАЙЛ
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="decor-order__btn-wrapper">
+          <button type="submit" class="decor-order__btn btn-1 fs-1 fw-regular color-whites cursor-pointer">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <p class="footer__title fs-1 fw-regular color-white">© 2018 «LoremIpsum.net» Все права защищены.</p>
+      <div class="footer__money">
+        <div class="footer__money-content">
+          <img src="./assets/qiwi-money.svg" alt="" class="footer__money-img">
+          <a href="https://qiwi.com/" class="footer__money-text color-grey">Qiwi wallet</a>
+        </div>
+        <div class="footer__money-content">
+          <img src="./assets/yandex-money.svg" alt="" class="footer__money-img">
+          <a href="https://yoomoney.ru/" class="footer__money-text color-grey">Yandex Money</a>
+        </div>
+        <div class="footer__money-content">
+          <img src="./assets/web-money.svg" alt="" class="footer__money-img">
+          <a href="https://www.webmoney.ru/" class="footer__money-text color-grey">Web Money</a>
+        </div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social-content">
+          <img src="./assets/mail.svg" alt="" class="footer__social-img">
+          <a href="mailto:info@ipsum228.com" class="footer__social-text fs-1 fw-regular color-white">info@ipsum228.com</a>
+        </div>
+        <div class="footer__social-content">
+          <img src="./assets/vk.svg" alt="" class="footer__social-img">
+          <a href="https://vk.com/id254405949" class="footer__social-text fs-1 fw-regular color-white">Мы вконтакте</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

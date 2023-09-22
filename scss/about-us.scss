@@ -1,0 +1,55 @@
+.about-us {
+  background-image: url(../assets/Bg-about.png);
+  background-size: cover;
+  background-position: center;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1172px;
+    padding: 202px 0 ;
+  }
+  &__title {
+    margin-bottom: 80px;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+  &__list {
+    margin-bottom: 80px;
+  }
+  &__list-item::before {
+    padding: 0 10px;
+    justify-content: center;
+    content:"-" ;
+  }
+  &__list-item {
+    margin-bottom: 5px;
+  }
+  &__action {}
+  &__btn:first-child {
+    margin-right: 30px;
+  }
+  &__btn {
+    width: 183px;
+    padding: 15px 0;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .about-us {
+    &__wrapper {
+      padding: 202px 20px;
+    }
+  }
+}
+@media screen and (max-width:576px) {
+  .about-us {
+    &__wrapper {
+      padding: 120px 10px;
+    }
+    &__btn {
+      width: 120px;
+      padding: 10px 0;
+    }
+  }
+}
