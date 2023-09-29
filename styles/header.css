@@ -1,3 +1,186 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400; /* Добавляем начертание с font-weight 400 */
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.color-primary {
+  color: #42A9ED;
+}
+
+.color-primary-light {
+  color: #3E9CDC;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.color-grey {
+  color: #C3C3C3;
+}
+
+.color-whitegrey {
+  color: #BBBBBB;
+}
+
+.color-black {
+  color: black;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fs-1 {
+  font-size: 13px;
+  line-height: 15.6px;
+}
+
+.fs-2 {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.fs-3 {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.fs-4 {
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.fs-5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.fs-6 {
+  font-size: 28px;
+  line-height: 32.87px;
+}
+
+.fs-7 {
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.fs-8 {
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+@media screen and (max-width: 992px) {
+  .fs-8 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fs-8 {
+    font-size: 32px;
+    line-height: 32.87px;
+  }
+  .fs-7 {
+    font-size: 28px;
+    line-height: 33.2px;
+  }
+  .fs-6 {
+    font-size: 20px;
+    line-height: 32.87px;
+  }
+  .fs-5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .fs-4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fs-8 {
+    font-size: 26px;
+    line-height: 32.87px;
+  }
+  .fs-5 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .fs-8 {
+    font-size: 20px;
+    line-height: 22.87px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .fs-8 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .fs-7 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .fs-4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fs-3 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+.fw-regular {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.fw-semibold {
+  font-family: "Lato-Bold", sans-serif;
+}
+
+.fw-bold {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.btn-1 {
+  background-color: #3E9CDC;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-1:hover {
+  background-color: #6db8ec;
+}
+
+.btn-2 {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #6F6D7B;
+  transition: 0.3s;
+}
+
+.btn-2:hover {
+  background-color: #e7e5e5;
+}
+
 @font-face {
   font-family: "Raleway-ExtraBold";
   src: url("../fonts/Raleway/static/Raleway-ExtraBold.ttf") format("truetype");
@@ -14,12 +197,26 @@
   max-width: 1172px;
   margin: 0 auto;
   padding: 33.5px 0 31.5px;
+  display: flex;
+  justify-content: space-between;
 }
 .header__logo {
+  color: #FFFFFF;
   font-family: "Raleway-ExtraBold", sans-serif;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
 }
 .header__menu {
   display: flex;
+}
+.header__menu-item a {
+  color: white;
+  transition: 0.3s ease;
+}
+.header__menu-item a:hover {
+  color: #43ABF0;
 }
 .header__menu-item {
   display: flex;
@@ -27,14 +224,12 @@
   margin-right: 60px;
   transition: 0.3s;
 }
-.header__menu-item:hover {
-  color: #43ABF0;
-}
 .header__menu-item:last-child {
   margin-right: 0;
 }
 .header__checkbox {
   display: none;
+  cursor: pointer;
   z-index: 4;
   width: 32px;
   opacity: 0;

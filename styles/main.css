@@ -15,22 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
 .color-primary {
   color: #42A9ED;
 }
@@ -49,6 +33,10 @@ html {
 
 .color-whitegrey {
   color: #BBBBBB;
+}
+
+.color-black {
+  color: black;
 }
 
 .cursor-pointer {

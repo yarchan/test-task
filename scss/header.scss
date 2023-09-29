@@ -1,3 +1,4 @@
+@import './main.scss';
 @font-face {
   font-family: 'Raleway-ExtraBold';
   src: url('../fonts/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
@@ -14,12 +15,27 @@
     max-width: 1172px;    
     margin: 0 auto;
     padding: 33.5px 0 31.5px;
+    display: flex;
+    justify-content: space-between;
   }
   &__logo {
+    color: $color-white ;
     font-family: 'Raleway-ExtraBold', sans-serif;
+  }
+  &__nav{
+    display: flex;
+    justify-content: center;
   }
   &__menu {
     display: flex;
+  }
+
+  &__menu-item a {
+    color: white;
+    transition: 0.3s ease;
+  }
+  &__menu-item a:hover {
+    color: #43ABF0;
   }
   &__menu-item {
     display: flex;
@@ -27,14 +43,12 @@
     margin-right: 60px;
     transition: 0.3s;
   }
-  &__menu-item:hover {
-    color: #43ABF0;
-  }
   &__menu-item:last-child {
     margin-right: 0;
   }
   &__checkbox{
     display: none;
+    cursor: pointer;
     z-index: 4;
     width: 32px;
     opacity: 0;
